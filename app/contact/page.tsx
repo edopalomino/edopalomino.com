@@ -13,8 +13,8 @@ const socials = [
 	},
 	{
 		icon: <MessageCircle size={20} />,
-		href: "https://bsky.app/profile/edopalomino.com",
-		label: "Bluesky",
+		href: "https://superhappy.social/@edopalomino",
+		label: "Mastodon",
 		handle: "edopalomino.com",
 	},
 	{
@@ -34,6 +34,7 @@ export default function Example() {
 					{socials.map((s) => (
 						<Card>
 							<Link
+                                rel="me"
 								href={s.href}
 								target="_blank"
 								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
